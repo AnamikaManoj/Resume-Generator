@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap');
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(113, 134, 134);
+    color: aliceblue;
+}
+.myimg{
+border-radius: 50%;
+width: 200px;
+height:200px;
+color: aliceblue;
+}
+#template1{
+    display: none;
+}
+#professional{
+    background-color: rgb(252, 252, 246);
+    color: black;
+}
+#personal{
+    background-color:rgb(16, 26, 44);
+    color: whitesmoke;
+}
+textarea{
+    white-space: pre-wrap;
+}
+.icon{
+    border-radius: 50%;
+    height: 26px;
+    margin: 2px;
+}
+
+.checked{
+    color:rgb(10, 6, 49)
+}
+@media print {
+    body{
+        background-color: whitesmoke;
+    }
+    .printb{
+        visibility: hidden;
+    }
+    .printable, .printable *{
+        width: 100%;
+        visibility: visible;
+        scale: 65%;
+        
+    }
+    @page{
+       margin: none;
+        size:A3;
+        -webkit-print-color-adjust: exact;
+    }
+    
+}
+
+button,#getstarted{
+    cursor: pointer;
+    background-color: rgb(83, 83, 83);
+    transition: 0.5s;
+  box-shadow: 0 0 10px rgba(60, 99, 99, 0.767);
+}
+button :hover{
+    background-color: black;
+  
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+#getstarted:hover{
+    transform:scale(1.05);
+
+    width: 180px;
+	height: 50px;
+}
+
+
+
+
+
+*{
+	padding: 0;
+	margin: 0;
+}
+.sec{
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(255,255,255,0.5),rgba(4,9,30,0.7)),url('resume.jpg');
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
